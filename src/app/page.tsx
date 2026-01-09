@@ -27,6 +27,9 @@ const testimonials = [
   { name: 'Parent, Experion Windchants', text: 'My son has improved tremendously in just 6 months. The coaches are very professional and patient.', rating: 5 },
   { name: 'Parent, Bestech Park View', text: 'Best tennis academy in Gurugram. Structured training and excellent facilities.', rating: 5 },
   { name: 'Adult Student, Delhi', text: 'Started as a complete beginner at 35. Now I play regularly. Great coaching for adults too!', rating: 5 },
+  { name: 'Parent, ATS Kocoon', text: 'My daughter loves the training sessions. Coaches make learning fun while maintaining discipline.', rating: 5 },
+  { name: 'Parent, Microtek Greenburg', text: 'Very systematic approach to teaching tennis. My kids look forward to every session.', rating: 5 },
+  { name: 'Parent, Ramprastha City', text: 'Excellent academy with certified coaches. Highly recommend for kids of all ages.', rating: 5 },
 ];
 
 export default function Home() {
@@ -37,20 +40,20 @@ export default function Home() {
         <div className="absolute inset-0 rounded-b-[2rem] sm:rounded-b-[3rem] -mt-24" style={{ background: 'linear-gradient(135deg, #1F7A4D 0%, #155c39 100%)' }} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
           <div className="text-center max-w-3xl mx-auto md:mx-0 md:text-left">
-            <div className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-white/90 text-xs sm:text-sm font-medium mb-3 sm:mb-4 animate-fade-in" style={{ background: 'rgba(255,255,255,0.15)' }}>
+            <div className="inline-block px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-white/90 text-xs sm:text-sm font-medium mb-3 sm:mb-4" style={{ background: 'rgba(255,255,255,0.15)' }}>
               Since 2022 • Delhi & Gurugram
             </div>
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-3 text-white leading-tight animate-fade-in-up">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-3 text-white leading-tight">
               Pro Ace Tennis Academy
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white/80 mb-1 animate-fade-in-up delay-100">Metro Tennis Academy</p>
-            <p className="text-lg sm:text-xl md:text-2xl font-medium text-white/90 mb-3 sm:mb-4 animate-fade-in-up delay-200">Professional Tennis Coaching</p>
-            <p className="text-sm sm:text-base text-white/70 mb-5 sm:mb-6 max-w-xl mx-auto md:mx-0 animate-fade-in-up delay-300">
+            <p className="text-base sm:text-lg md:text-xl text-white/80 mb-1">Metro Tennis Academy</p>
+            <p className="text-lg sm:text-xl md:text-2xl font-medium text-white/90 mb-3 sm:mb-4">Professional Tennis Coaching</p>
+            <p className="text-sm sm:text-base text-white/70 mb-5 sm:mb-6 max-w-xl mx-auto md:mx-0">
               Expert certified coaches, structured programs for all ages, modern training methods.
             </p>
             
             {/* Trust Badges */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-1.5 sm:gap-2 mb-5 sm:mb-6 animate-fade-in-up delay-300">
+            <div className="flex flex-wrap justify-center md:justify-start gap-1.5 sm:gap-2 mb-5 sm:mb-6">
               <div className="flex items-center gap-1 px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-medium" style={{ background: 'rgba(255,255,255,0.2)', color: 'white' }}>
                 <BadgeCheck className="w-3 h-3 sm:w-4 sm:h-4" /> AITA Certified
               </div>
@@ -62,12 +65,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="animate-fade-in-up delay-400">
-              <CTAButtons />
-            </div>
+            <CTAButtons />
 
             {/* Social Proof */}
-            <div className="mt-5 sm:mt-6 flex flex-wrap justify-center md:justify-start items-center gap-3 sm:gap-4 animate-fade-in-up delay-500">
+            <div className="mt-5 sm:mt-6 flex flex-wrap justify-center md:justify-start items-center gap-3 sm:gap-4">
               <div className="flex items-center gap-0.5">
                 {[1,2,3,4,5].map(i => <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-400 fill-yellow-400" />)}
                 <span className="text-white/80 text-xs sm:text-sm ml-1">Trusted by parents</span>
@@ -109,7 +110,7 @@ export default function Home() {
       <section className="py-10 sm:py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
-            <div className="order-2 md:order-1 animate-slide-left">
+            <div className="order-2 md:order-1">
               <SectionTitle title="About Our Academy" centered={false} />
               <p className="text-gray-600 mb-3 sm:mb-4 text-sm leading-relaxed">
                 Pro Ace Tennis Academy is a professional lawn tennis coaching academy established in 2022 with the mission to develop skilled, disciplined, and confident tennis players.
@@ -121,7 +122,7 @@ export default function Home() {
                 Learn more →
               </Link>
             </div>
-            <div className="order-1 md:order-2 glass-card rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center animate-slide-right" style={{ background: 'rgba(31, 122, 77, 0.1)' }}>
+            <div className="order-1 md:order-2 glass-card rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center" style={{ background: 'rgba(31, 122, 77, 0.1)' }}>
               <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full flex items-center justify-center mb-3 sm:mb-4" style={{ background: 'linear-gradient(135deg, #1F7A4D 0%, #2E8B57 100%)' }}>
                 <span className="text-3xl sm:text-4xl">🎾</span>
               </div>
@@ -196,7 +197,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-10 sm:py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center text-white animate-scale-in" style={{ background: 'linear-gradient(135deg, #1F7A4D 0%, #155c39 100%)' }}>
+          <div className="rounded-xl sm:rounded-2xl p-6 sm:p-8 text-center text-white" style={{ background: 'linear-gradient(135deg, #1F7A4D 0%, #155c39 100%)' }}>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3">Ready to Start?</h2>
             <p className="text-white/80 mb-4 sm:mb-6 text-xs sm:text-sm">Book a trial session today</p>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center">
